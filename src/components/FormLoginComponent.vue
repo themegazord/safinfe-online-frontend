@@ -66,11 +66,6 @@ export default {
       }
     }
   },
-  methods: {
-    login() {
-      console.log(this.dados)
-    }
-  },
   validations() {
     return {
       dados: {
