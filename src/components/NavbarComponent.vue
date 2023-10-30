@@ -2,7 +2,7 @@
   <nav>
     <h1 class="titulo">SF <span>sistemas</span></h1>
     <ul class="nav-links">
-      <router-link class="nav-link" active-class="nav-link-atual" to="login">Entre</router-link>
+      <router-link class="nav-link" active-class="nav-link-atual" to="/">Entre</router-link>
       <router-link class="nav-link" active-class="nav-link-atual" to="contatos">Contatos</router-link>
     </ul>
   </nav>
