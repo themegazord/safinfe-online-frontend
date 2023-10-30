@@ -34,7 +34,7 @@
     </v-container>
     <v-container class="opcoes">
       <v-switch
-        v-model="dados.manter_conectado"
+        v-model="dados.manterLogado"
         color="var(--darkblue)"
         label="Lembrar senha"
       >
@@ -44,7 +44,7 @@
       </v-switch>
       <router-link class="esqueceuSenha" to="esqueciSenha">Esqueceu sua senha?</router-link>
     </v-container>
-    <v-btn variant="tonal" color="primary" @click="$emit('login', dados)" append-icon="fas fa-chevron-right">Entrar</v-btn>
+    <v-btn variant="tonal" color="primary" @click="enviaLogin" append-icon="fas fa-chevron-right">Entrar</v-btn>
   </form>
 </template>
 
@@ -62,7 +62,14 @@ export default {
       dados: {
         email: '',
         password: '',
-        manter_conectado: false
+        manterLogado: false
+      }
+    }
+  },
+  methods: {
+    async enviaLogin() {
+      if (await this.v$.dados.$validate()) {
+        this.$emit('login', this.dados)
       }
     }
   },
