@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import { useInfoLoading } from '../stores/infoLoading';
+import { useInfoLoading } from '../../stores/infoLoading';
 export default {
     props: {
         loading: {

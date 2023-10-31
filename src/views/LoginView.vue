@@ -9,9 +9,9 @@
 </template>
 
 <script>
-import LoadingComponent from '../components/LoadingComponent.vue';
-import FormLoginComponent from '../components/FormLoginComponent.vue';
-import NotificacaoComponent from '../components/NotificacaoComponent.vue';
+import LoadingComponent from '../components/Utilitarios/LoadingComponent.vue';
+import FormLoginComponent from '../components/Formularios/FormLoginComponent.vue';
+import NotificacaoComponent from '../components/Utilitarios/NotificacaoComponent.vue';
 import NavbarComponent from '../components/NavbarComponent.vue';
 import FooterComponent from '../components/FooterComponent.vue';
 import { useEndpoints } from '../stores/endpoints'

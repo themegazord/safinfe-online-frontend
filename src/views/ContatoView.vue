@@ -8,7 +8,7 @@
 
 <script>
 import FooterComponent from '../components/FooterComponent.vue';
-import FormContatoComponent from '../components/FormContatoComponent.vue';
+import FormContatoComponent from '../components/Formularios/FormContatoComponent.vue';
 import NavbarComponent from '../components/NavbarComponent.vue';
 export default {
   components: {

@@ -10,7 +10,7 @@
 </template>
 <script>
 import { watch } from 'vue';
-import { useNotificacoes } from '../stores/notificacao';
+import { useNotificacoes } from '../../stores/notificacao';
 export default {
     methods: {
         setTipoNotificacao(tipo) {
