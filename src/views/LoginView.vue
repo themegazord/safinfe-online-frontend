@@ -12,7 +12,7 @@
 import LoadingComponent from '../components/Utilitarios/LoadingComponent.vue';
 import FormLoginComponent from '../components/Formularios/FormLoginComponent.vue';
 import NotificacaoComponent from '../components/Utilitarios/NotificacaoComponent.vue';
-import NavbarComponent from '../components/NavbarComponent.vue';
+import NavbarComponent from '../components/Navbar/NavbarComponent.vue';
 import FooterComponent from '../components/FooterComponent.vue';
 import { useEndpoints } from '../stores/endpoints'
 import { useNotificacoes } from '../stores/notificacao'

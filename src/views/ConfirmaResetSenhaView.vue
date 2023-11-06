@@ -20,7 +20,7 @@
 
 <script>
 import FooterComponent from '../components/FooterComponent.vue'
-import NavbarComponent from '../components/NavbarComponent.vue'
+import NavbarComponent from '../components/Navbar/NavbarComponent.vue'
 export default {
   components: { NavbarComponent, FooterComponent },
   computed: {

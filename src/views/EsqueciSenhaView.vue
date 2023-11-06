@@ -12,7 +12,7 @@
 import axios from 'axios'
 import FooterComponent from '../components/FooterComponent.vue'
 import FormEsqueciSenhaComponent from '../components/Formularios/FormEsqueciSenhaComponent.vue'
-import NavbarComponent from '../components/NavbarComponent.vue'
+import NavbarComponent from '../components/Navbar/NavbarComponent.vue'
 import { useEndpoints } from '../stores/endpoints'
 import NotificacaoComponent from '../components/Utilitarios/NotificacaoComponent.vue'
 import { mapActions } from 'pinia'
