@@ -46,10 +46,12 @@ export default {
         if (dados.manterLogado) {
           localStorage.setItem('token', res.data.dados.token)
           localStorage.setItem('usuario', JSON.stringify(res.data.dados.usuario))
+          this.$router.push('dashboard')
         }
         if (!dados.manterLogado) {
           sessionStorage.setItem('token', res.data.dados.token)
           sessionStorage.setItem('usuario', JSON.stringify(res.data.dados.usuario))
+          this.$router.push('dashboard')
         }
         this.loading = false
       }).catch((err) => {
