@@ -1,5 +1,5 @@
 <template>
-  <v-navigation-drawer expand-on-hover rail>
+  <v-navigation-drawer expand-on-hover rail color="#74bbe0">
     <v-list>
       <v-list-item prepend-icon="fas fa-user" :title="getNome" :subtitle="getEmail"></v-list-item>
     </v-list>
@@ -25,8 +25,7 @@
 export default {
   data() {
     return {
-      storage:
-        JSON.parse(localStorage.getItem('usuario')) || JSON.parse(sessionStorage.getItem('usuario'))
+      storage: JSON.parse(localStorage.getItem('usuario')) || JSON.parse(sessionStorage.getItem('usuario'))
     }
   },
   computed: {

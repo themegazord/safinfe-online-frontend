@@ -9,11 +9,18 @@ export const useEndpoints = defineStore('endpoints', {
       solicitaResetSenha: `${url}api/v1/interno/autenticacao/solicita_reset_senha`,
       resetaSenha: `${url}api/v1/interno/autenticacao/reset_senha`,
     },
+    clientes: {
+      paginacao: `${url}api/v1/interno/cliente/paginacao`,
+      emitiuNotaFiscal: `${url}api/v1/interno/cliente/emitiu_nota`
+    },
     token: `Bearer ${localStorage.getItem('token') || sessionStorage.getItem('token')}`,
   }),
   getters: {
     getAutenticacaoLogin: (state) => state.autenticacao.login,
     getAutenticacaoSolicitaResetSenha: (state) => state.autenticacao.solicitaResetSenha,
-    getAutenticacaoResetaSenha: (state) => state.autenticacao.resetaSenha
+    getAutenticacaoResetaSenha: (state) => state.autenticacao.resetaSenha,
+    getClientesPaginacao: (state) => state.clientes.paginacao,
+    getClienteEmitiuNotaFiscal: (state) => state.clientes.emitiuNotaFiscal,
+    getToken: (state) => state.token
   }
 })
