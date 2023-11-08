@@ -11,7 +11,8 @@ export const useEndpoints = defineStore('endpoints', {
     },
     clientes: {
       paginacao: `${url}api/v1/interno/cliente/paginacao`,
-      emitiuNotaFiscal: `${url}api/v1/interno/cliente/emitiu_nota`
+      emitiuNotaFiscal: `${url}api/v1/interno/cliente/emitiu_nota`,
+      infoFinanceira: `${url}api/v1/interno/cliente/info_fin`,
     },
     token: `Bearer ${localStorage.getItem('token') || sessionStorage.getItem('token')}`,
   }),
@@ -21,6 +22,7 @@ export const useEndpoints = defineStore('endpoints', {
     getAutenticacaoResetaSenha: (state) => state.autenticacao.resetaSenha,
     getClientesPaginacao: (state) => state.clientes.paginacao,
     getClienteEmitiuNotaFiscal: (state) => state.clientes.emitiuNotaFiscal,
+    getClienteInfoFinanceira: (state) => state.clientes.infoFinanceira,
     getToken: (state) => state.token
   }
 })
