@@ -1,5 +1,5 @@
 <template>
-  <v-navigation-drawer expand-on-hover rail color="#74bbe0">
+  <v-navigation-drawer permanent="true" rail color="#74bbe0">
     <v-list>
       <v-list-item prepend-icon="fas fa-user" :title="getNome" :subtitle="getEmail"></v-list-item>
     </v-list>
