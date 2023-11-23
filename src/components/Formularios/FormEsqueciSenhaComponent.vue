@@ -23,11 +23,7 @@
         </v-col>
       </v-row>
     </v-container>
-    <v-btn
-      variant="tonal"
-      color="primary"
-      @click="enviarEsqueciSenha"
-      append-icon="fas fa-chevron-right"
+    <v-btn variant="tonal" @click="enviarEsqueciSenha" append-icon="fas fa-chevron-right"
       >Continuar</v-btn
     >
   </form>
@@ -67,11 +63,15 @@ export default {
 </script>
 
 <style scoped>
+.form-esqueciSenha {
+  margin: 5rem 0;
+}
+
 @media screen and (max-width: 2560px) {
   .form-esqueciSenha {
     display: flex;
-    padding: calc(3.5rem * 2560 / 1920) calc(7.5rem * 2560 / 1920) calc(3.5rem * 2560 / 1920)
-      calc(7.5rem * 2560 / 1920);
+    padding: calc(11.125em * 2560 / 1440) calc(5.8rem * 2560 / 1440) calc(9rem * 2560 / 1440)
+      calc(5.8rem * 2560 / 1440);
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -81,32 +81,38 @@ export default {
     gap: 2rem;
   }
 
-  .titulo-subtitulo {
+  .titulo-subtitulo h1 {
     color: var(--darkblue);
     font-family: DM Sans;
-    font-size: calc(1.25rem * 2560 / 1920);
+    font-size: calc(1.75rem * 2560 / 1440);
     font-style: normal;
     font-weight: 700;
     line-height: normal;
   }
 
-
-  .titulo-subtitulo h2{
+  .titulo-subtitulo h2 {
     color: var(--darkblue);
     font-family: Poppins;
-    font-size: calc(1rem * 2560 / 1920);
+    font-size: calc(1rem * 2560 / 1440);
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    width: 70%;
-    padding-top: .5rem;
+    padding-top: 0.5rem;
+  }
+
+  .v-btn {
+    width: calc(10.5rem * 2560 / 1440);
+    padding: 1.5rem 0;
+    display: flex;
+    background-color: var(--darkblue);
+    color: white;
   }
 }
 @media screen and (max-width: 1920px) {
   .form-esqueciSenha {
     display: flex;
-    padding: calc(3.5rem * 1920 / 1920) calc(7.5rem * 1920 / 1920) calc(3.5rem * 1920 / 1920)
-      calc(7.5rem * 1920 / 1920);
+    padding: calc(11.125em * 1920 / 1440) calc(5.8rem * 1920 / 1440) calc(9rem * 1920 / 1440)
+      calc(5.8rem * 1920 / 1440);
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -116,31 +122,38 @@ export default {
     gap: 2rem;
   }
 
-  .titulo-subtitulo {
+  .titulo-subtitulo h1 {
     color: var(--darkblue);
     font-family: DM Sans;
-    font-size: calc(1.25rem * 1920 / 1920);
+    font-size: calc(1.75rem * 1920 / 1440);
     font-style: normal;
     font-weight: 700;
     line-height: normal;
   }
 
-  .titulo-subtitulo h2{
+  .titulo-subtitulo h2 {
     color: var(--darkblue);
     font-family: Poppins;
-    font-size: calc(1rem * 1920 / 1920);
+    font-size: calc(1rem * 1920 / 1440);
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    width: 70%;
-    padding-top: .5rem;
+    padding-top: 0.5rem;
+  }
+
+  .v-btn {
+    width: calc(10.5rem * 1920 / 1440);
+    padding: 1.5rem 0;
+    display: flex;
+    background-color: var(--darkblue);
+    color: white;
   }
 }
 @media screen and (max-width: 1600px) {
   .form-esqueciSenha {
     display: flex;
-    padding: calc(3.5rem * 1600 / 1920) calc(7.5rem * 1600 / 1920) calc(3.5rem * 1600 / 1920)
-      calc(7.5rem * 1600 / 1920);
+    padding: calc(11.125em * 1600 / 1440) calc(5.8rem * 1600 / 1440) calc(9rem * 1600 / 1440)
+      calc(5.8rem * 1600 / 1440);
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -150,32 +163,38 @@ export default {
     gap: 2rem;
   }
 
-  .titulo-subtitulo {
+  .titulo-subtitulo h1 {
     color: var(--darkblue);
     font-family: DM Sans;
-    font-size: calc(1.25rem * 1600 / 1920);
+    font-size: calc(1.75rem * 1600 / 1440);
     font-style: normal;
     font-weight: 700;
     line-height: normal;
   }
 
-
-  .titulo-subtitulo h2{
+  .titulo-subtitulo h2 {
     color: var(--darkblue);
     font-family: Poppins;
-    font-size: calc(1rem * 1600 / 1920);
+    font-size: calc(1rem * 1600 / 1440);
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    width: 70%;
-    padding-top: .5rem;
+    padding-top: 0.5rem;
+  }
+
+  .v-btn {
+    width: calc(10.5rem * 1600 / 1440);
+    padding: 1.5rem 0;
+    display: flex;
+    background-color: var(--darkblue);
+    color: white;
   }
 }
 @media screen and (max-width: 1440px) {
   .form-esqueciSenha {
     display: flex;
-    padding: calc(3.5rem * 1440 / 1920) calc(7.5rem * 1440 / 1920) calc(3.5rem * 1440 / 1920)
-      calc(7.5rem * 1440 / 1920);
+    padding: calc(11.125em * 1440 / 1440) calc(5.8rem * 1440 / 1440) calc(9rem * 1440 / 1440)
+      calc(5.8rem * 1440 / 1440);
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -185,32 +204,38 @@ export default {
     gap: 2rem;
   }
 
-  .titulo-subtitulo {
+  .titulo-subtitulo h1 {
     color: var(--darkblue);
     font-family: DM Sans;
-    font-size: calc(1.25rem * 1440 / 1920);
+    font-size: calc(1.75rem * 1440 / 1440);
     font-style: normal;
     font-weight: 700;
     line-height: normal;
   }
 
-
-  .titulo-subtitulo h2{
+  .titulo-subtitulo h2 {
     color: var(--darkblue);
     font-family: Poppins;
-    font-size: calc(1rem * 1440 / 1920);
+    font-size: calc(1rem * 1440 / 1440);
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    width: 70%;
-    padding-top: .5rem;
+    padding-top: 0.5rem;
+  }
+
+  .v-btn {
+    width: calc(10.5rem * 1440 / 1440);
+    padding: 1.5rem 0;
+    display: flex;
+    background-color: var(--darkblue);
+    color: white;
   }
 }
 @media screen and (max-width: 1366px) {
   .form-esqueciSenha {
     display: flex;
-    padding: calc(3.5rem * 1366 / 1920) calc(7.5rem * 1366 / 1920) calc(3.5rem * 1366 / 1920)
-      calc(7.5rem * 1366 / 1920);
+    padding: calc(11.125em * 1366 / 1440) calc(5.8rem * 1366 / 1440) calc(9rem * 1366 / 1440)
+      calc(5.8rem * 1366 / 1440);
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -220,32 +245,38 @@ export default {
     gap: 2rem;
   }
 
-  .titulo-subtitulo {
+  .titulo-subtitulo h1 {
     color: var(--darkblue);
     font-family: DM Sans;
-    font-size: calc(1.25rem * 1366 / 1920);
+    font-size: calc(1.75rem * 1366 / 1440);
     font-style: normal;
     font-weight: 700;
     line-height: normal;
   }
 
-
-  .titulo-subtitulo h2{
+  .titulo-subtitulo h2 {
     color: var(--darkblue);
     font-family: Poppins;
-    font-size: calc(1rem * 1366 / 1920);
+    font-size: calc(1rem * 1366 / 1440);
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    width: 70%;
-    padding-top: .5rem;
+    padding-top: 0.5rem;
+  }
+
+  .v-btn {
+    width: calc(10.5rem * 1366 / 1440);
+    padding: 1.5rem 0;
+    display: flex;
+    background-color: var(--darkblue);
+    color: white;
   }
 }
 @media screen and (max-width: 1280px) {
   .form-esqueciSenha {
     display: flex;
-    padding: calc(3.5rem * 1280 / 1920) calc(7.5rem * 1280 / 1920) calc(3.5rem * 1280 / 1920)
-      calc(7.5rem * 1280 / 1920);
+    padding: calc(11.125em * 1280 / 1440) calc(5.8rem * 1280 / 1440) calc(9rem * 1280 / 1440)
+      calc(5.8rem * 1280 / 1440);
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -255,32 +286,38 @@ export default {
     gap: 2rem;
   }
 
-  .titulo-subtitulo {
+  .titulo-subtitulo h1 {
     color: var(--darkblue);
     font-family: DM Sans;
-    font-size: calc(1.25rem * 1280 / 1920);
+    font-size: calc(1.75rem * 1280 / 1440);
     font-style: normal;
     font-weight: 700;
     line-height: normal;
   }
 
-
-  .titulo-subtitulo h2{
+  .titulo-subtitulo h2 {
     color: var(--darkblue);
     font-family: Poppins;
-    font-size: calc(1rem * 1280 / 1920);
+    font-size: calc(1rem * 1280 / 1440);
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    width: 70%;
-    padding-top: .5rem;
+    padding-top: 0.5rem;
+  }
+
+  .v-btn {
+    width: calc(10.5rem * 1280 / 1440);
+    padding: 1.5rem 0;
+    display: flex;
+    background-color: var(--darkblue);
+    color: white;
   }
 }
 @media screen and (max-width: 1024px) {
   .form-esqueciSenha {
     display: flex;
-    padding: calc(3.5rem * 1024 / 1920) calc(7.5rem * 1024 / 1920) calc(3.5rem * 1024 / 1920)
-      calc(7.5rem * 1024 / 1920);
+    padding: calc(11.125em * 1024 / 1440) calc(5.8rem * 1024 / 1440) calc(9rem * 1024 / 1440)
+      calc(5.8rem * 1024 / 1440);
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -290,25 +327,163 @@ export default {
     gap: 2rem;
   }
 
-  .titulo-subtitulo {
+  .titulo-subtitulo h1 {
     color: var(--darkblue);
     font-family: DM Sans;
-    font-size: calc(1.25rem * 1024 / 1920);
+    font-size: calc(1.75rem * 1024 / 1440);
     font-style: normal;
     font-weight: 700;
     line-height: normal;
   }
 
-
-  .titulo-subtitulo h2{
+  .titulo-subtitulo h2 {
     color: var(--darkblue);
     font-family: Poppins;
-    font-size: calc(1rem * 1024 / 1920);
+    font-size: calc(1rem * 1024 / 1440);
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    width: 70%;
-    padding-top: .5rem;
+    padding-top: 0.5rem;
+  }
+
+  .v-btn {
+    width: calc(10.5rem * 1024 / 1440);
+    padding: 1.5rem;
+    display: flex;
+    background-color: var(--darkblue);
+    color: white;
+    font-size: .5rem;
+  }
+}
+
+/* Mobile */
+
+@media screen and (max-width: 750px) {
+  .form-esqueciSenha {
+    display: flex;
+    padding: calc(11.125em * 750 / 1440) calc(5.8rem * 750 / 1440) calc(9rem * 750 / 1440)
+      calc(5.8rem * 750 / 1440);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    width: 80%;
+    border-radius: 15px;
+    gap: 2rem;
+  }
+
+  .titulo-subtitulo h1 {
+    color: var(--darkblue);
+    font-family: DM Sans;
+    font-size: calc(1.75rem * 750 / 1440);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .titulo-subtitulo h2 {
+    color: var(--darkblue);
+    font-family: Poppins;
+    font-size: calc(1rem * 750 / 1440);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 0.5rem;
+  }
+
+  .v-btn {
+    width: calc(10.5rem * 750 / 1440);
+    padding: 1.5rem;
+    display: flex;
+    background-color: var(--darkblue);
+    color: white;
+    font-size: .5rem;
+  }
+}
+@media screen and (max-width: 640px) {
+  .form-esqueciSenha {
+    display: flex;
+    padding: calc(11.125em * 640 / 1440) calc(5.8rem * 640 / 1440) calc(9rem * 640 / 1440)
+      calc(5.8rem * 640 / 1440);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    width: 80%;
+    border-radius: 15px;
+    gap: 2rem;
+    margin-bottom: 10rem;
+  }
+
+  .titulo-subtitulo h1 {
+    color: var(--darkblue);
+    font-family: DM Sans;
+    font-size: calc(1.75rem * 640 / 1440);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .titulo-subtitulo h2 {
+    color: var(--darkblue);
+    font-family: Poppins;
+    font-size: calc(1rem * 640 / 1440);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 0.5rem;
+  }
+
+  .v-btn {
+    width: calc(10.5rem * 640 / 1440);
+    padding: 1.5rem;
+    display: flex;
+    background-color: var(--darkblue);
+    color: white;
+    font-size: .3rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .form-esqueciSenha {
+    display: flex;
+    padding: calc(11.125em * 400 / 1440) calc(5.8rem * 400 / 1440) calc(9rem * 400 / 1440)
+      calc(5.8rem * 400 / 1440);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    width: 80%;
+    border-radius: 15px;
+    gap: 2rem;
+    margin-bottom: 10rem;
+  }
+
+  .titulo-subtitulo h1 {
+    color: var(--darkblue);
+    font-family: DM Sans;
+    font-size: calc(1.75rem * 400 / 1440);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .titulo-subtitulo h2 {
+    color: var(--darkblue);
+    font-family: Poppins;
+    font-size: calc(1rem * 400 / 1440);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 0.5rem;
+  }
+
+  .v-btn {
+    width: calc(10.5rem * 400 / 1440);
+    padding: 1.5rem;
+    display: flex;
+    background-color: var(--darkblue);
+    color: white;
+    font-size: .2rem;
   }
 }
 </style>
