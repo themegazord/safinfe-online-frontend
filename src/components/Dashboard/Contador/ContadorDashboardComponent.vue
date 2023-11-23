@@ -237,4 +237,16 @@ main {
   display: flex;
   justify-content: space-between;
 }
+
+@media screen and (max-width: 900px) {
+  .info-1 {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .listagem-cliente {
+    width: 100% ;
+  }
+}
 </style>
