@@ -86,7 +86,6 @@ export default {
 <style scoped>
   main {
     background: var(--darkblue);
-    height: 80vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
