@@ -14,6 +14,10 @@ import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
 import { aliases, fa } from 'vuetify/iconsets/fa'
 
+import { Bootstrap4Pagination } from 'laravel-vue-pagination';
+import { Bootstrap5Pagination } from 'laravel-vue-pagination';
+import { TailwindPagination } from 'laravel-vue-pagination';
+
 const vuetify = createVuetify({
   icons: {
     defaultSet: 'fa',
@@ -28,6 +32,10 @@ const vuetify = createVuetify({
 
 
 const app = createApp(App)
+
+app.component(Bootstrap4Pagination)
+app.component(Bootstrap5Pagination)
+app.component(TailwindPagination)
 
 app.use(createPinia())
 app.use(router)

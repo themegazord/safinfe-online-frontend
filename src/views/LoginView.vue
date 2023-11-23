@@ -12,7 +12,7 @@
 import LoadingComponent from '../components/Utilitarios/LoadingComponent.vue';
 import FormLoginComponent from '../components/Formularios/FormLoginComponent.vue';
 import NotificacaoComponent from '../components/Utilitarios/NotificacaoComponent.vue';
-import NavbarComponent from '../components/NavbarComponent.vue';
+import NavbarComponent from '../components/Navbar/NavbarComponent.vue';
 import FooterComponent from '../components/FooterComponent.vue';
 import { useEndpoints } from '../stores/endpoints'
 import { useNotificacoes } from '../stores/notificacao'
@@ -46,10 +46,12 @@ export default {
         if (dados.manterLogado) {
           localStorage.setItem('token', res.data.dados.token)
           localStorage.setItem('usuario', JSON.stringify(res.data.dados.usuario))
+          this.$router.push('dashboard')
         }
         if (!dados.manterLogado) {
           sessionStorage.setItem('token', res.data.dados.token)
           sessionStorage.setItem('usuario', JSON.stringify(res.data.dados.usuario))
+          this.$router.push('dashboard')
         }
         this.loading = false
       }).catch((err) => {
