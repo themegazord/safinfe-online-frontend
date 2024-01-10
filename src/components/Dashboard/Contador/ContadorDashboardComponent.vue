@@ -112,9 +112,8 @@ export default {
           }
         )
         .then((res) => {
-          this.loading = false
           this.clientes = res.data
-          console.log(this.clientes)
+          this.loading = false
         })
         .catch((err) => {
           this.loading = false
@@ -135,7 +134,6 @@ export default {
         }
       }).then((res) => {
         this.emitiuNota = res.data.emitiu_nota
-        console.log(this.emitiuNota)
       }).catch((err) => {
         console.log(err)
       })
@@ -148,7 +146,6 @@ export default {
         }
       }).then((res) => {
         this.infoFin = res.data.infoFinanceira
-        console.log(this.infoFin)
       }).catch((err) => {
         console.log(err)
       })

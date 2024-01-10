@@ -1,5 +1,5 @@
 <template>
-  <v-navigation-drawer permanent="true" rail color="#74bbe0">
+  <v-navigation-drawer :permanent="true" :expand-on-hover="true" rail color="#74bbe0">
     <v-list>
       <v-list-item prepend-icon="fas fa-user" :title="getNome" :subtitle="getEmail"></v-list-item>
     </v-list>
@@ -7,7 +7,8 @@
     <v-divider></v-divider>
 
     <v-list density="compact" nav>
-      <v-list-item prepend-icon="fas fa-list" title="XML" value="xml"></v-list-item>
+      <v-list-item prepend-icon="fas fa-home" title="Dashboard" @click="$router.push({ path: '/dashboard' })"></v-list-item>
+      <v-list-item prepend-icon="fas fa-list" title="XML" value="xml" @click="irXML"></v-list-item>
       <v-list-item
         prepend-icon="fas fa-cog"
         title="Administração"
@@ -25,7 +26,8 @@
 export default {
   data() {
     return {
-      storage: JSON.parse(localStorage.getItem('usuario')) || JSON.parse(sessionStorage.getItem('usuario'))
+      storage:
+        JSON.parse(localStorage.getItem('usuario')) || JSON.parse(sessionStorage.getItem('usuario'))
     }
   },
   computed: {
@@ -46,6 +48,9 @@ export default {
       sessionStorage.removeItem('token')
       sessionStorage.removeItem('usuario')
       this.$router.push({ path: '/' })
+    },
+    irXML() {
+      this.$router.push({ path: '/xml' })
     }
   }
 }
